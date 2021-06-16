@@ -17,6 +17,8 @@ int driver_main(int argc, char const * argv[]) {
 
   // insert random numbers into vett
   randomize_vett(vett);
+
+  //ciclo di copia
   std::copy(vett.cbegin(), vett.cend(), vett2.begin());
 
   std::cout << "std::sort\n";
@@ -24,6 +26,9 @@ int driver_main(int argc, char const * argv[]) {
   print(vett);
   print(vett2);
   std::cout << std::endl;
+
+  //ciclo di copia
+  std::copy(vett.cbegin(), vett.cend(), vett2.begin());
 
   std::cout << "bubble sort\n";
   bubble_sort(vett2.begin(), vett2.end());

@@ -3,6 +3,7 @@
 #include "cpplike.hpp"
 
 int main(int argc, char const * argv[]) {
+  std::cout << "C++ Version: " << __cplusplus << '\n' << std::endl;
 
   auto dlm = std::string(80, '.');
 
